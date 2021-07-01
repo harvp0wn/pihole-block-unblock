@@ -6,7 +6,7 @@ Simple scripts to block and unblock websites with pihole.
 2. Clone repo `git clone https://github.com/harvp0wn/pihole-block-unblock/`
 3. Go to repo directory `cd pihole-block-unblock`
 4. Modify the website list to your liking `nano list`
-5. Run scripts as sudo `sudo ./pihole-block.sh` and `sudo ./pihole-block.sh`
+5. Run scripts as sudo `sudo bash pihole-block.sh` and `sudo bash pihole-block.sh`
 
 # Setup a schedule with cron
 1. Open sudo crontab `sudo crontab -e`
