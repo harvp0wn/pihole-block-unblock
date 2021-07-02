@@ -17,12 +17,7 @@ Simple scripts to block and unblock websites with pihole.
 0 9 * * * /bin/bash /home/pi/scripts/pihole-unblock.sh
 ```
 # Different modes
-The default mode is to add to the blacklist and to add to whitelist. In each script there is a mode variable that you can change to suit your needs. 
-
-### Wildcards
-- Some might find this mode to be a better option.
-- Change pihole-block.sh mode to "--wild" & pihole-unblock.sh mode to "--wild -d" or "--white-wild"
-- For more mode ideas run `pihole --help` and `pihole -w -h`
+The default mode is to add to the wildcard blacklist to block and to remove from the wildcard blacklist to unblock. In each script there is a mode variable that you can change to suit your needs. Run `pihole --help` and `pihole -b -h` foe different mode ideas.
 
 # Notes
 - The pihole command needs to be run as root (sudo). Therefor the scripts need to be run as root too
