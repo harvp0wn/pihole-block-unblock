@@ -1,7 +1,7 @@
 # pihole-block-unblock
 Simple script to block and unblock websites with pihole.
 
-## Installion
+## Installion:
 ```
 cd ~/
 git clone https://github.com/harvp0wn/pihole-block-unblock
@@ -10,17 +10,19 @@ sudo ./pihole-block.sh --install
 ```
 
 ## Usage:
+```
 pihole-block		Add items in list to blocklist
 pihole-block unblock	Remove added items from blocklist
 pihole-block [option]	See below
-
+```
 ## Options:
+```
 		--help			Display this message
 -l		--list			Edit domain list
 -c		--config		Edit config file
 		--install		Link to /usr/local/bin/pihole-block
 		--uninstall		Remove link
-
+```
 
 
 ## Setup a schedule with cron
