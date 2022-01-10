@@ -122,12 +122,16 @@ unblock () {
 	while read line; do pihole $unblock $line; done < /home/pi/pihole-block-unblock/default.list
 }
 
+<<<<<<< HEAD
 # block
 if [ "$#" = "0" ]; then
 block
 echo "Goodbye :)"
 exit 0
 fi
+=======
+while read line; do /usr/local/bin/pihole $mode $line; done < /home/pi/pihole-block-unblock/list
+>>>>>>> main
 
 # unblock
 if [ "$1" = "unblock" ]; then
